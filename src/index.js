@@ -10,11 +10,9 @@ const root = ReactDOM.createRoot(el);
 
 // 4. buat komponen
 function App(){
-    let message  = 'yohohoh';
-    if(Math.random() > 0.5){
-        message = 'yoro';
-    }
-    return <h1>{message}</h1>;
+    var date = new Date();
+    var time = date.toLocaleTimeString();
+    return <h1>{time}</h1>;
 }
 
 // 5. tampilkan komponen
